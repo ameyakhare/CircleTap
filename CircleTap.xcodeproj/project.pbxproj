@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D5A2ED31AA21552003A6189 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A2ED21AA21552003A6189 /* MainMenuScene.swift */; };
 		9DDEECD81AA1A7AD00F85FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECD71AA1A7AD00F85FEB /* AppDelegate.swift */; };
 		9DDEECDA1AA1A7AD00F85FEB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEECD91AA1A7AD00F85FEB /* GameScene.sks */; };
 		9DDEECDC1AA1A7AD00F85FEB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECDB1AA1A7AD00F85FEB /* GameScene.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D5A2ED21AA21552003A6189 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		9DDEECD21AA1A7AD00F85FEB /* CircleTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDEECD61AA1A7AD00F85FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDEECD71AA1A7AD00F85FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,10 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				9DDEECD71AA1A7AD00F85FEB /* AppDelegate.swift */,
-				9DDEECD91AA1A7AD00F85FEB /* GameScene.sks */,
-				9DDEECDB1AA1A7AD00F85FEB /* GameScene.swift */,
-				9DDEECDD1AA1A7AD00F85FEB /* GameViewController.swift */,
 				9DDEECDF1AA1A7AD00F85FEB /* Main.storyboard */,
+				9DDEECD91AA1A7AD00F85FEB /* GameScene.sks */,
+				9DDEECDD1AA1A7AD00F85FEB /* GameViewController.swift */,
+				9D5A2ED21AA21552003A6189 /* MainMenuScene.swift */,
+				9DDEECDB1AA1A7AD00F85FEB /* GameScene.swift */,
 				9DDEECFD1AA1C50100F85FEB /* SizeableCircle.swift */,
 				9DDEECE21AA1A7AD00F85FEB /* Images.xcassets */,
 				9DDEECE41AA1A7AD00F85FEB /* LaunchScreen.xib */,
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5A2ED31AA21552003A6189 /* MainMenuScene.swift in Sources */,
 				9DDEECFE1AA1C50100F85FEB /* SizeableCircle.swift in Sources */,
 				9DDEECDC1AA1A7AD00F85FEB /* GameScene.swift in Sources */,
 				9DDEECDE1AA1A7AD00F85FEB /* GameViewController.swift in Sources */,
@@ -417,6 +421,7 @@
 				9DDEECF71AA1A7AD00F85FEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DDEECF81AA1A7AD00F85FEB /* Build configuration list for PBXNativeTarget "CircleTapTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				9DDEECFA1AA1A7AD00F85FEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

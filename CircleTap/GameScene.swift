@@ -17,11 +17,13 @@ class GameScene: SKScene {
     var score_label = SKLabelNode(fontNamed: "Chalkduster")
     
     override func didMoveToView(view: SKView) {
+        backgroundColor = SKColor.cyanColor()
+        
         restart()
         self.addChild(circ)
         
         score_label.fontSize = 35
-        score_label.fontColor = SKColor.whiteColor()
+        score_label.fontColor = SKColor.blackColor()
         score_label.position = CGPoint(x: size.width/2, y: size.height*0.9)
         addChild(score_label)
     }
