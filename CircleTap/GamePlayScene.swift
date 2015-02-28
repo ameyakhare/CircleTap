@@ -14,7 +14,7 @@ class GamePlayScene: SKScene {
     var circ = SizeableCircle(radius: 0.0, position: CGPoint(x:0,y:0))
     var diff:CGFloat = 1
     var score = 0
-    var score_label = SKLabelNode(fontNamed: "Chalkduster")
+    var score_label = SKLabelNode(fontNamed: "Helvetica-Light")
     
     override func didMoveToView(view: SKView) {
         backgroundColor = SKColor.cyanColor()
@@ -38,8 +38,6 @@ class GamePlayScene: SKScene {
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        gameInProgress = true
-        
         let touch = touches.anyObject() as UITouch
         let touchLocation = touch.locationInNode(self)
         
@@ -48,6 +46,7 @@ class GamePlayScene: SKScene {
             circ.changeToRandomColor()
             circ.spawnToRandomLocation(width: size.width, height: size.height)
             score += 1
+            gameInProgress = true
         }
     }
     

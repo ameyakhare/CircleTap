@@ -9,8 +9,8 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    var play_text = SKLabelNode(fontNamed: "Chalkduster")
-    var highscore_text = SKLabelNode(fontNamed: "Chalkduster")
+    var play_text = SKLabelNode(fontNamed: "Helvetica-Light")
+    var highscore_text = SKLabelNode(fontNamed: "Helvetica-Light")
     
     override func didMoveToView(view: SKView) {
         backgroundColor = SKColor.cyanColor()
@@ -38,9 +38,9 @@ class GameScene: SKScene {
             scene.scaleMode = .AspectFill
             self.view?.presentScene(scene)
         } else if CGRectContainsPoint(highscore_text.frame, touchLocation) {
-            NSLog("high score?")
-        } else {
-            NSLog("neither of them!")
+            let scene = HighScoreScene(size: size)
+            scene.scaleMode = .AspectFill
+            self.view?.presentScene(scene)
         }
     }
 }
