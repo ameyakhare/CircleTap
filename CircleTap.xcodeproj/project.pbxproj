@@ -15,6 +15,7 @@
 		9DDEECE31AA1A7AD00F85FEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEECE21AA1A7AD00F85FEB /* Images.xcassets */; };
 		9DDEECE61AA1A7AD00F85FEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEECE41AA1A7AD00F85FEB /* LaunchScreen.xib */; };
 		9DDEECF21AA1A7AD00F85FEB /* CircleTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECF11AA1A7AD00F85FEB /* CircleTapTests.swift */; };
+		9DDEECFE1AA1C50100F85FEB /* SizeableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECFD1AA1C50100F85FEB /* SizeableCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9DDEECEB1AA1A7AD00F85FEB /* CircleTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDEECF01AA1A7AD00F85FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DDEECF11AA1A7AD00F85FEB /* CircleTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTapTests.swift; sourceTree = "<group>"; };
+		9DDEECFD1AA1C50100F85FEB /* SizeableCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeableCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				9DDEECDB1AA1A7AD00F85FEB /* GameScene.swift */,
 				9DDEECDD1AA1A7AD00F85FEB /* GameViewController.swift */,
 				9DDEECDF1AA1A7AD00F85FEB /* Main.storyboard */,
+				9DDEECFD1AA1C50100F85FEB /* SizeableCircle.swift */,
 				9DDEECE21AA1A7AD00F85FEB /* Images.xcassets */,
 				9DDEECE41AA1A7AD00F85FEB /* LaunchScreen.xib */,
 				9DDEECD51AA1A7AD00F85FEB /* Supporting Files */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDEECFE1AA1C50100F85FEB /* SizeableCircle.swift in Sources */,
 				9DDEECDC1AA1A7AD00F85FEB /* GameScene.swift in Sources */,
 				9DDEECDE1AA1A7AD00F85FEB /* GameViewController.swift in Sources */,
 				9DDEECD81AA1A7AD00F85FEB /* AppDelegate.swift in Sources */,

@@ -9,37 +9,51 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    var gameInProgress:Bool = false
+    var currentSize:CGFloat = 0
+    var circ = SizeableCircle(radius: 0.0, position: CGPoint(x:0,y:0))
+    var diff:CGFloat = 1
+    var score = 0
+    var score_label = SKLabelNode(fontNamed: "Chalkduster")
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        restart()
+        self.addChild(circ)
         
-        self.addChild(myLabel)
+        score_label.fontSize = 35
+        score_label.fontColor = SKColor.whiteColor()
+        score_label.position = CGPoint(x: size.width/2, y: size.height*0.9)
+        addChild(score_label)
+    }
+    
+    func restart () {
+        score = 0
+        score_label.text = "Score: \(score)"
+        circ.position = CGPoint(x:size.width*0.5, y:size.height*0.5)
+        circ.radius = size.width*0.12
+        circ.changeToRandomColor()
+        gameInProgress = false
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
+        gameInProgress = true
         
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+        let touch = touches.anyObject() as UITouch
+        let touchLocation = touch.locationInNode(self)
+        
+        if CGRectContainsPoint(circ.frame, touchLocation) {
+            circ.radius = size.width*0.12
+            circ.changeToRandomColor()
+            circ.spawnToRandomLocation(width: size.width, height: size.height)
+            score += 1
         }
     }
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        if (!gameInProgress) {return}
+        
+        circ.radius -= diff
+        score_label.text = "Score: \(score)"
+        if (circ.radius <= 0) {restart()}
     }
 }
