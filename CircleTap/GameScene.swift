@@ -9,53 +9,38 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    var gameInProgress:Bool = false
-    var currentSize:CGFloat = 0
-    var circ = SizeableCircle(radius: 0.0, position: CGPoint(x:0,y:0))
-    var diff:CGFloat = 1
-    var score = 0
-    var score_label = SKLabelNode(fontNamed: "Chalkduster")
+    var play_text = SKLabelNode(fontNamed: "Chalkduster")
+    var highscore_text = SKLabelNode(fontNamed: "Chalkduster")
     
     override func didMoveToView(view: SKView) {
         backgroundColor = SKColor.cyanColor()
         
-        restart()
-        self.addChild(circ)
+        play_text.fontSize = 35
+        highscore_text.fontSize = 35
+        play_text.fontColor = SKColor.blackColor()
+        highscore_text.fontColor = SKColor.blackColor()
+        play_text.position = CGPoint(x: size.width/2, y: size.height*0.5)
+        highscore_text.position = CGPoint(x: size.width/2, y: size.height*0.35)
         
-        score_label.fontSize = 35
-        score_label.fontColor = SKColor.blackColor()
-        score_label.position = CGPoint(x: size.width/2, y: size.height*0.9)
-        addChild(score_label)
-    }
-    
-    func restart () {
-        score = 0
-        score_label.text = "Score: \(score)"
-        circ.position = CGPoint(x:size.width*0.5, y:size.height*0.5)
-        circ.radius = size.width*0.12
-        circ.changeToRandomColor()
-        gameInProgress = false
+        play_text.text = "Play Game"
+        highscore_text.text = "Leaderboard"
+        
+        addChild(play_text)
+        addChild(highscore_text)
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        gameInProgress = true
-        
         let touch = touches.anyObject() as UITouch
         let touchLocation = touch.locationInNode(self)
         
-        if CGRectContainsPoint(circ.frame, touchLocation) {
-            circ.radius = size.width*0.12
-            circ.changeToRandomColor()
-            circ.spawnToRandomLocation(width: size.width, height: size.height)
-            score += 1
+        if CGRectContainsPoint(play_text.frame, touchLocation) {
+            let scene = GamePlayScene(size: size)
+            scene.scaleMode = .AspectFill
+            self.view?.presentScene(scene)
+        } else if CGRectContainsPoint(highscore_text.frame, touchLocation) {
+            NSLog("high score?")
+        } else {
+            NSLog("neither of them!")
         }
-    }
-   
-    override func update(currentTime: CFTimeInterval) {
-        if (!gameInProgress) {return}
-        
-        circ.radius -= diff
-        score_label.text = "Score: \(score)"
-        if (circ.radius <= 0) {restart()}
     }
 }
