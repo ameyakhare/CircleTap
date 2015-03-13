@@ -7,10 +7,9 @@
 //
 
 import SpriteKit
-import Parse
 
 class HighScoreScene: SKScene {
-    var scores = [PFObject]()
+    //var scores = [PFObject]()
     
     override func didMoveToView (view: SKView) {
         // parse local datastore enabled
@@ -21,7 +20,7 @@ class HighScoreScene: SKScene {
     }
     
     func loadScores () {
-        scores = [PFObject]()
+        /*scores = [PFObject]()
         
         var query = PFQuery(className:"Player_High_Scores")
         query.findObjectsInBackgroundWithBlock {
@@ -37,11 +36,11 @@ class HighScoreScene: SKScene {
                 // Log details of the failure
                 println("Error: \(error) \(error!.userInfo!)")
             }
-        }
+        }*/
     }
     
     func drawHighScores () {
-        var i = 0
+        /*var i = 0
         
         while i < 10 && i < scores.count {
             var player_label = SKLabelNode(fontNamed: "Helvetica-Light")
@@ -53,6 +52,6 @@ class HighScoreScene: SKScene {
             
             player_label.text = "hi"
             addChild(player_label)
-        }
+        }*/
     }
 }
