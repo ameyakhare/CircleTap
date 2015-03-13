@@ -38,9 +38,13 @@ class GameScene: SKScene {
             scene.scaleMode = .AspectFill
             self.view?.presentScene(scene)
         } else if CGRectContainsPoint(highscore_text.frame, touchLocation) {
-            let scene = HighScoreScene(size: size)
+            /*let scene = HighScoreScene(size: size)
             scene.scaleMode = .AspectFill
-            self.view?.presentScene(scene)
+            self.view?.presentScene(scene)*/
+            var alert = UIAlertView(title: "Not Ready",
+                message: "We haven't added highscore functionality yet!",
+                delegate:self, cancelButtonTitle: "OK");
+            alert.show();
         }
     }
 }
