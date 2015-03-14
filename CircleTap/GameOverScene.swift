@@ -9,5 +9,5 @@
 import SpriteKit
 
 class GameOverScene: SKScene {
-    
+    // will be implemented later
 }
