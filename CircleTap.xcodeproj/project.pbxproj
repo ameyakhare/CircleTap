@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D4721AB1AA2205D00FDB4B8 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4721AA1AA2205D00FDB4B8 /* GameOverScene.swift */; };
+		9D4721AD1AA2207D00FDB4B8 /* HighScoreScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4721AC1AA2207D00FDB4B8 /* HighScoreScene.swift */; };
+		9D5A2ED31AA21552003A6189 /* GamePlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5A2ED21AA21552003A6189 /* GamePlayScene.swift */; };
+		9DDEECD81AA1A7AD00F85FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECD71AA1A7AD00F85FEB /* AppDelegate.swift */; };
+		9DDEECDA1AA1A7AD00F85FEB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEECD91AA1A7AD00F85FEB /* GameScene.sks */; };
+		9DDEECDC1AA1A7AD00F85FEB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECDB1AA1A7AD00F85FEB /* GameScene.swift */; };
+		9DDEECDE1AA1A7AD00F85FEB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECDD1AA1A7AD00F85FEB /* GameViewController.swift */; };
+		9DDEECE11AA1A7AD00F85FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEECDF1AA1A7AD00F85FEB /* Main.storyboard */; };
+		9DDEECE31AA1A7AD00F85FEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEECE21AA1A7AD00F85FEB /* Images.xcassets */; };
+		9DDEECE61AA1A7AD00F85FEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DDEECE41AA1A7AD00F85FEB /* LaunchScreen.xib */; };
+		9DDEECF21AA1A7AD00F85FEB /* CircleTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECF11AA1A7AD00F85FEB /* CircleTapTests.swift */; };
+		9DDEECFE1AA1C50100F85FEB /* SizeableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDEECFD1AA1C50100F85FEB /* SizeableCircle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DDEECEC1AA1A7AD00F85FEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DDEECCA1AA1A7AD00F85FEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DDEECD11AA1A7AD00F85FEB;
+			remoteInfo = CircleTap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D4721AA1AA2205D00FDB4B8 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		9D4721AC1AA2207D00FDB4B8 /* HighScoreScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreScene.swift; sourceTree = "<group>"; };
+		9D4721AF1AA2219D00FDB4B8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../iOS Parse Library/Bolts.framework"; sourceTree = "<group>"; };
+		9D4721B01AA2219D00FDB4B8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../iOS Parse Library/Parse.framework"; sourceTree = "<group>"; };
+		9D4721B11AA2219D00FDB4B8 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../iOS Parse Library/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		9D4721B21AA2219D00FDB4B8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../iOS Parse Library/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		9D4721B31AA2219D00FDB4B8 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../iOS Parse Library/ParseUI.framework"; sourceTree = "<group>"; };
+		9D5A2ED21AA21552003A6189 /* GamePlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayScene.swift; sourceTree = "<group>"; };
+		9DDEECD21AA1A7AD00F85FEB /* CircleTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDEECD61AA1A7AD00F85FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDEECD71AA1A7AD00F85FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DDEECD91AA1A7AD00F85FEB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		9DDEECDB1AA1A7AD00F85FEB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		9DDEECDD1AA1A7AD00F85FEB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		9DDEECE01AA1A7AD00F85FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DDEECE21AA1A7AD00F85FEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9DDEECE51AA1A7AD00F85FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9DDEECEB1AA1A7AD00F85FEB /* CircleTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DDEECF01AA1A7AD00F85FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DDEECF11AA1A7AD00F85FEB /* CircleTapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleTapTests.swift; sourceTree = "<group>"; };
+		9DDEECFD1AA1C50100F85FEB /* SizeableCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeableCircle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DDEECCF1AA1A7AD00F85FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDEECE81AA1A7AD00F85FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D4721AE1AA220DF00FDB4B8 /* Parse Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D4721AF1AA2219D00FDB4B8 /* Bolts.framework */,
+				9D4721B01AA2219D00FDB4B8 /* Parse.framework */,
+				9D4721B11AA2219D00FDB4B8 /* ParseCrashReporting.framework */,
+				9D4721B21AA2219D00FDB4B8 /* ParseFacebookUtils.framework */,
+				9D4721B31AA2219D00FDB4B8 /* ParseUI.framework */,
+			);
+			name = "Parse Frameworks";
+			sourceTree = "<group>";
+		};
+		9DDEECC91AA1A7AD00F85FEB = {
+			isa = PBXGroup;
+			children = (
+				9DDEECD41AA1A7AD00F85FEB /* CircleTap */,
+				9DDEECEE1AA1A7AD00F85FEB /* CircleTapTests */,
+				9DDEECD31AA1A7AD00F85FEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DDEECD31AA1A7AD00F85FEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DDEECD21AA1A7AD00F85FEB /* CircleTap.app */,
+				9DDEECEB1AA1A7AD00F85FEB /* CircleTapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DDEECD41AA1A7AD00F85FEB /* CircleTap */ = {
+			isa = PBXGroup;
+			children = (
+				9D4721AE1AA220DF00FDB4B8 /* Parse Frameworks */,
+				9DDEECD71AA1A7AD00F85FEB /* AppDelegate.swift */,
+				9DDEECDF1AA1A7AD00F85FEB /* Main.storyboard */,
+				9DDEECD91AA1A7AD00F85FEB /* GameScene.sks */,
+				9DDEECDD1AA1A7AD00F85FEB /* GameViewController.swift */,
+				9DDEECDB1AA1A7AD00F85FEB /* GameScene.swift */,
+				9D5A2ED21AA21552003A6189 /* GamePlayScene.swift */,
+				9D4721AA1AA2205D00FDB4B8 /* GameOverScene.swift */,
+				9D4721AC1AA2207D00FDB4B8 /* HighScoreScene.swift */,
+				9DDEECFD1AA1C50100F85FEB /* SizeableCircle.swift */,
+				9DDEECE21AA1A7AD00F85FEB /* Images.xcassets */,
+				9DDEECE41AA1A7AD00F85FEB /* LaunchScreen.xib */,
+				9DDEECD51AA1A7AD00F85FEB /* Supporting Files */,
+			);
+			path = CircleTap;
+			sourceTree = "<group>";
+		};
+		9DDEECD51AA1A7AD00F85FEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DDEECD61AA1A7AD00F85FEB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DDEECEE1AA1A7AD00F85FEB /* CircleTapTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DDEECF11AA1A7AD00F85FEB /* CircleTapTests.swift */,
+				9DDEECEF1AA1A7AD00F85FEB /* Supporting Files */,
+			);
+			path = CircleTapTests;
+			sourceTree = "<group>";
+		};
+		9DDEECEF1AA1A7AD00F85FEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DDEECF01AA1A7AD00F85FEB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DDEECD11AA1A7AD00F85FEB /* CircleTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DDEECF51AA1A7AD00F85FEB /* Build configuration list for PBXNativeTarget "CircleTap" */;
+			buildPhases = (
+				9DDEECCE1AA1A7AD00F85FEB /* Sources */,
+				9DDEECCF1AA1A7AD00F85FEB /* Frameworks */,
+				9DDEECD01AA1A7AD00F85FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleTap;
+			productName = CircleTap;
+			productReference = 9DDEECD21AA1A7AD00F85FEB /* CircleTap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DDEECEA1AA1A7AD00F85FEB /* CircleTapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DDEECF81AA1A7AD00F85FEB /* Build configuration list for PBXNativeTarget "CircleTapTests" */;
+			buildPhases = (
+				9DDEECE71AA1A7AD00F85FEB /* Sources */,
+				9DDEECE81AA1A7AD00F85FEB /* Frameworks */,
+				9DDEECE91AA1A7AD00F85FEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DDEECED1AA1A7AD00F85FEB /* PBXTargetDependency */,
+			);
+			name = CircleTapTests;
+			productName = CircleTapTests;
+			productReference = 9DDEECEB1AA1A7AD00F85FEB /* CircleTapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DDEECCA1AA1A7AD00F85FEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ameyakhare;
+				TargetAttributes = {
+					9DDEECD11AA1A7AD00F85FEB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9DDEECEA1AA1A7AD00F85FEB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 9DDEECD11AA1A7AD00F85FEB;
+					};
+				};
+			};
+			buildConfigurationList = 9DDEECCD1AA1A7AD00F85FEB /* Build configuration list for PBXProject "CircleTap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DDEECC91AA1A7AD00F85FEB;
+			productRefGroup = 9DDEECD31AA1A7AD00F85FEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DDEECD11AA1A7AD00F85FEB /* CircleTap */,
+				9DDEECEA1AA1A7AD00F85FEB /* CircleTapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DDEECD01AA1A7AD00F85FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDEECE61AA1A7AD00F85FEB /* LaunchScreen.xib in Resources */,
+				9DDEECE31AA1A7AD00F85FEB /* Images.xcassets in Resources */,
+				9DDEECDA1AA1A7AD00F85FEB /* GameScene.sks in Resources */,
+				9DDEECE11AA1A7AD00F85FEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDEECE91AA1A7AD00F85FEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DDEECCE1AA1A7AD00F85FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D5A2ED31AA21552003A6189 /* GamePlayScene.swift in Sources */,
+				9D4721AD1AA2207D00FDB4B8 /* HighScoreScene.swift in Sources */,
+				9DDEECFE1AA1C50100F85FEB /* SizeableCircle.swift in Sources */,
+				9DDEECDC1AA1A7AD00F85FEB /* GameScene.swift in Sources */,
+				9DDEECDE1AA1A7AD00F85FEB /* GameViewController.swift in Sources */,
+				9D4721AB1AA2205D00FDB4B8 /* GameOverScene.swift in Sources */,
+				9DDEECD81AA1A7AD00F85FEB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DDEECE71AA1A7AD00F85FEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDEECF21AA1A7AD00F85FEB /* CircleTapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DDEECED1AA1A7AD00F85FEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DDEECD11AA1A7AD00F85FEB /* CircleTap */;
+			targetProxy = 9DDEECEC1AA1A7AD00F85FEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DDEECDF1AA1A7AD00F85FEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DDEECE01AA1A7AD00F85FEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DDEECE41AA1A7AD00F85FEB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DDEECE51AA1A7AD00F85FEB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DDEECF31AA1A7AD00F85FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DDEECF41AA1A7AD00F85FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DDEECF61AA1A7AD00F85FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ameya/XCodeProjects/iOS,
+					Parse,
+					Library,
+					/Users/Ameya/XCodeProjects/iOS,
+					Parse,
+					Library,
+				);
+				INFOPLIST_FILE = CircleTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CircleTap/CircleTap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DDEECF71AA1A7AD00F85FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ameya/XCodeProjects/iOS,
+					Parse,
+					Library,
+					/Users/Ameya/XCodeProjects/iOS,
+					Parse,
+					Library,
+				);
+				INFOPLIST_FILE = CircleTap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CircleTap/CircleTap-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		9DDEECF91AA1A7AD00F85FEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CircleTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleTap.app/CircleTap";
+			};
+			name = Debug;
+		};
+		9DDEECFA1AA1A7AD00F85FEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CircleTapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleTap.app/CircleTap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DDEECCD1AA1A7AD00F85FEB /* Build configuration list for PBXProject "CircleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDEECF31AA1A7AD00F85FEB /* Debug */,
+				9DDEECF41AA1A7AD00F85FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DDEECF51AA1A7AD00F85FEB /* Build configuration list for PBXNativeTarget "CircleTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDEECF61AA1A7AD00F85FEB /* Debug */,
+				9DDEECF71AA1A7AD00F85FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DDEECF81AA1A7AD00F85FEB /* Build configuration list for PBXNativeTarget "CircleTapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDEECF91AA1A7AD00F85FEB /* Debug */,
+				9DDEECFA1AA1A7AD00F85FEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DDEECCA1AA1A7AD00F85FEB /* Project object */;
+}
