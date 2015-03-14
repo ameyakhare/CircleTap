@@ -7,6 +7,7 @@
 //
 
 import SpriteKit
+//import Parse
 
 class HighScoreScene: SKScene {
     //var scores = [PFObject]()
